@@ -56,7 +56,21 @@
     .image-row img {
         width: 100%;
         height: auto;
-        max-width: 200px;  /* 원하는 최대 너비를 설정하세요 */
+    }
+    @media (min-width: 481px) {
+        .image-row img {
+            width: 50%; /* 화면 너비가 481px 이상일 때 이미지는 한 줄에 두 개씩 */
+        }
+    }
+    @media (min-width: 769px) {
+        .image-row img {
+            width: 33.33%; /* 화면 너비가 769px 이상일 때 이미지는 한 줄에 세 개씩 */
+        }
+    }
+    @media (min-width: 1025px) {
+        .image-row img {
+            width: 25%; /* 화면 너비가 1025px 이상일 때 이미지는 한 줄에 네 개씩 */
+        }
     }
 </style>
 
@@ -66,6 +80,7 @@
     <a href="https://open.kakao.com/o/gPiPLPYd" target="_blank"><img src="kakao.png" alt="kakao"></a>
     <a href="https://t.me/DDaDon_INFO" target="_blank"><img src="tele.png" alt="tele"></a>
 </div>
+
 
 
 
