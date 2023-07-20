@@ -53,23 +53,25 @@
                         </ol><div class="row">
 												
 <style>
-    .image-row img {
+    .image-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .image-row a {
         width: 100%;
-        height: auto;
     }
-    @media (min-width: 481px) {
-        .image-row img {
-            width: 50%; /* 화면 너비가 481px 이상일 때 이미지는 한 줄에 두 개씩 */
+
+    @media (min-width: 600px) {
+        .image-row a {
+            width: 50%; /* 2개씩 나열 */
         }
     }
-    @media (min-width: 769px) {
-        .image-row img {
-            width: 33.33%; /* 화면 너비가 769px 이상일 때 이미지는 한 줄에 세 개씩 */
-        }
-    }
-    @media (min-width: 1025px) {
-        .image-row img {
-            width: 25%; /* 화면 너비가 1025px 이상일 때 이미지는 한 줄에 네 개씩 */
+
+    @media (min-width: 900px) {
+        .image-row a {
+            width: 25%; /* 4개씩 나열 */
         }
     }
 </style>
@@ -80,6 +82,7 @@
     <a href="https://open.kakao.com/o/gPiPLPYd" target="_blank"><img src="kakao.png" alt="kakao"></a>
     <a href="https://t.me/DDaDon_INFO" target="_blank"><img src="tele.png" alt="tele"></a>
 </div>
+
 
 
 
