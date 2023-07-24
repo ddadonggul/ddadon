@@ -12,7 +12,7 @@ var myLineChart = new Chart(ctx, {
       label: "페이백 누적 금액",
       backgroundColor: "rgba(2,117,216,1)",
       borderColor: "rgba(2,117,216,1)",
-      data: [246, 410.2, 503.2, 727.2, 912],
+      data: [246, 410.2, 503.2, 727.2, 1033],
     }],
   },
   options: {
